@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="300" viewBox="0 0 240 300" role="img" aria-label="No photo">
+  <!-- Facebook-style people-card placeholder: light panel, rounded top corners -->
+  <path fill="#e4e6eb" d="M12 0h216a12 12 0 0 1 12 12v288H0V12A12 12 0 0 1 12 0z"/>
+  <!-- Generic person silhouette -->
+  <circle cx="120" cy="112" r="40" fill="#bcc0c4"/>
+  <ellipse cx="120" cy="268" rx="88" ry="68" fill="#bcc0c4"/>
+</svg>
