@@ -23,6 +23,11 @@ class CandidateProfileController extends ApiController
         $access = $this->access($request);
         $access->authorize('candidates.update');
 
+        if ($access->principal->role->canonical() === 'student'
+            && $candidate->applicant_external_id !== $access->principal->id) {
+            abort(403, 'Students can update only their own candidate profile.');
+        }
+
         $data = $request->validate([
             'tagline'        => ['nullable', 'string', 'max:255'],
             'platform'       => ['nullable', 'string'],

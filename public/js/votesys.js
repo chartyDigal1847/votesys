@@ -190,12 +190,7 @@ if (window.__VOTESYS_LOADED__) {
             })[state.tab] || "VoteSys workspace";
         }
         function roleNotice() {
-            return ({
-                admin: "Admin mode: full election oversight, audit monitoring, candidate decisions, and result analytics are enabled.",
-                election_officer: "Election officer mode: manage candidates, approvals, timeline monitoring, analytics, and election operations.",
-                student: "Student mode: cast your ballot once, view candidates, track notifications, and review released results.",
-                candidate: "Candidate mode: view candidate listings, election results, and notifications tied to your portal account.",
-            })[state.role] || "VoteSys access is restricted by your DEORIS portal role.";
+            return "";
         }
         function totalVotes() {
             return Object.values(state.results).reduce(
@@ -231,7 +226,11 @@ if (window.__VOTESYS_LOADED__) {
             const subtitle = document.getElementById("vs-current-subtitle");
             if (subtitle) subtitle.textContent = pageSubtitle();
             const notice = document.getElementById("vs-role-notice");
-            if (notice) notice.textContent = roleNotice();
+            if (notice) {
+                notice.textContent = "";
+                const banner = notice.closest(".privacy-notice");
+                if (banner) banner.style.display = "none";
+            }
             const role = document.getElementById("userRole");
             if (role) role.textContent = roleLabel();
         }

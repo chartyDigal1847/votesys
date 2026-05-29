@@ -7,7 +7,6 @@ enum VoteSysRole: string
     case Admin           = 'admin';
     case ElectionOfficer = 'election_officer';
     case Student         = 'student';
-    case Candidate       = 'candidate';
 
     public static function tryFromString(?string $role): ?self
     {
@@ -18,6 +17,10 @@ enum VoteSysRole: string
         $canonical = strtolower($role);
         if ($canonical === 'hr') {
             return self::ElectionOfficer;
+        }
+
+        if ($canonical === 'candidate') {
+            return self::Student;
         }
 
         return self::tryFrom($canonical);
@@ -42,7 +45,6 @@ enum VoteSysRole: string
             self::Admin->value,
             self::ElectionOfficer->value,
             self::Student->value,
-            self::Candidate->value,
         ];
     }
 

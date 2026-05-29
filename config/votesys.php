@@ -45,14 +45,12 @@ return [
         'admin',
         'election_officer',
         'student',
-        'candidate',
     ],
 
     'role_labels' => [
         'admin'            => 'Administrator',
         'election_officer' => 'Election Officer',
         'student'          => 'Student Voter',
-        'candidate'        => 'Candidate',
     ],
 
     /*
@@ -63,7 +61,7 @@ return [
 
     'permissions' => [
         // Elections lifecycle
-        'elections.view'          => ['admin', 'election_officer', 'student', 'candidate'],
+        'elections.view'          => ['admin', 'election_officer', 'student'],
         'elections.create'        => ['admin'],
         'elections.update'        => ['admin', 'election_officer'],
         'elections.delete'        => ['admin'],
@@ -71,15 +69,15 @@ return [
         'elections.manage_status' => ['admin', 'election_officer'],
 
         // Positions
-        'positions.view'   => ['admin', 'election_officer', 'student', 'candidate'],
+        'positions.view'   => ['admin', 'election_officer', 'student'],
         'positions.manage' => ['admin', 'election_officer'],
 
         // Candidates
-        'candidates.view'    => ['admin', 'election_officer', 'student', 'candidate'],
+        'candidates.view'    => ['admin', 'election_officer', 'student'],
         'candidates.manage'  => ['admin', 'election_officer'],
-        'candidates.apply'   => ['candidate'],
+        'candidates.apply'   => ['student'],
         'candidates.create'  => ['admin', 'election_officer'],
-        'candidates.update'  => ['admin', 'election_officer', 'candidate'],
+        'candidates.update'  => ['admin', 'election_officer', 'student'],
         'candidates.delete'  => ['admin'],
         'candidates.approve' => ['admin', 'election_officer'],
 
@@ -88,15 +86,15 @@ return [
         'vote.view_own' => ['student'],
 
         // Results & analytics
-        'results.view'    => ['admin', 'election_officer', 'student', 'candidate'],
+        'results.view'    => ['admin', 'election_officer', 'student'],
         'results.release' => ['admin', 'election_officer'],
         'analytics.view'  => ['admin', 'election_officer'],
 
         // Operations
         'activity.view'      => ['admin', 'election_officer'],
         'audit.view'         => ['admin', 'election_officer'],
-        'notifications.view' => ['admin', 'election_officer', 'student', 'candidate'],
-        'search.use'         => ['admin', 'election_officer', 'student', 'candidate'],
+        'notifications.view' => ['admin', 'election_officer', 'student'],
+        'search.use'         => ['admin', 'election_officer', 'student'],
     ],
 
     'allow_dev_headers' => env('VOTESYS_ALLOW_DEV_HEADERS', true),

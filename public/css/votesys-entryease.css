@@ -1,0 +1,203 @@
+/* VoteSys — DEORIS / EntryEase alignment */
+
+#votesys-root,
+.vs-app-shell {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.vs-app-shell {
+    background:
+        radial-gradient(circle at top left, rgba(124, 48, 65, 0.06), transparent 32rem),
+        linear-gradient(180deg, #f8fafc 0%, #f4f6f9 48%, #eef2f7 100%) !important;
+}
+
+.vs-app-shell .app-content {
+    padding: 22px 26px 34px !important;
+}
+
+.vs-app-shell .workspace {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.meditrack-shell .module-topbar,
+.vs-app-shell .module-topbar {
+    display: grid !important;
+    grid-template-columns: minmax(220px, 1fr) auto;
+    align-items: end !important;
+    gap: 1rem 1.25rem !important;
+    margin-bottom: 1.15rem !important;
+    padding: 1.1rem 1.2rem !important;
+    background: #ffffff !important;
+    border: 1px solid #e8ecf0 !important;
+    border-radius: 16px !important;
+    box-shadow: 0 1px 4px rgba(15, 22, 35, 0.06), 0 8px 24px rgba(15, 22, 35, 0.08) !important;
+}
+
+.vs-app-shell .module-brandline {
+    margin-bottom: 0.35rem;
+}
+
+.vs-app-shell .vs-live-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 3px 9px;
+    border-radius: 999px;
+    background: #f0fdf4;
+    color: #15803d;
+    font-size: 0.72rem;
+    font-weight: 700;
+}
+
+.vs-app-shell .module-title {
+    color: #5c2230 !important;
+    font-size: clamp(1.45rem, 1.9vw, 1.9rem) !important;
+    font-weight: 800 !important;
+    letter-spacing: -0.04em;
+}
+
+.vs-app-shell .module-sub {
+    color: #6b7a8d !important;
+    font-size: 0.9rem !important;
+    margin-top: 0.2rem !important;
+}
+
+.vs-app-shell .module-actions {
+    justify-content: flex-end !important;
+    gap: 0.45rem !important;
+}
+
+.meditrack-shell .privacy-notice,
+.vs-app-shell .privacy-notice {
+    display: none !important;
+}
+
+.vs-app-shell .top-action {
+    min-height: 36px !important;
+    padding: 7px 12px !important;
+    font-size: 0.875rem !important;
+    border: 1px solid #e8ecf0 !important;
+    border-radius: 8px !important;
+    background: #ffffff !important;
+    color: #1e2530 !important;
+    box-shadow: 0 1px 2px rgba(15, 22, 35, 0.04);
+}
+
+.vs-app-shell .top-action:hover {
+    background: #f9eef1 !important;
+    border-color: rgba(124, 48, 65, 0.16) !important;
+    color: #7c3041 !important;
+}
+
+.vs-app-shell .top-action.active {
+    background: #7c3041 !important;
+    border-color: #7c3041 !important;
+    color: #ffffff !important;
+    box-shadow: 0 7px 18px rgba(124, 48, 65, 0.2) !important;
+}
+
+.vs-app-shell .card,
+.meditrack-shell .card,
+.vs-app-shell .main-card,
+.vs-app-shell .candidates-table-card,
+.vs-app-shell .listing-card,
+.vs-app-shell .candidate-card {
+    border-radius: 12px !important;
+    border: 1px solid #e8ecf0 !important;
+    background: #ffffff !important;
+    box-shadow: 0 1px 4px rgba(15, 22, 35, 0.06), 0 8px 24px rgba(15, 22, 35, 0.08) !important;
+}
+
+.vs-app-shell .metrics-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)) !important;
+    gap: 1rem !important;
+    margin-bottom: 1.25rem !important;
+}
+
+.vs-app-shell .metric-card {
+    min-height: 112px !important;
+    padding: 1rem 1rem 0.9rem !important;
+    border: 1px solid #e8ecf0 !important;
+    border-radius: 14px !important;
+    background:
+        linear-gradient(145deg, rgba(255, 255, 255, 0.98), rgba(255, 255, 255, 0.9)),
+        #ffffff !important;
+    box-shadow: 0 1px 4px rgba(15, 22, 35, 0.06), 0 8px 24px rgba(15, 22, 35, 0.08) !important;
+    overflow: hidden;
+}
+
+.vs-app-shell .metric-card::after {
+    height: 4px !important;
+    opacity: 1 !important;
+}
+
+.vs-app-shell .metric-icon {
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 11px !important;
+    background: #f9eef1 !important;
+    color: #7c3041 !important;
+}
+
+.vs-app-shell .metric-value {
+    color: #7c3041 !important;
+    font-size: 1.55rem !important;
+    font-weight: 800 !important;
+}
+
+.vs-app-shell .metric-label {
+    color: #6b7a8d !important;
+    font-size: 0.76rem !important;
+    letter-spacing: 0.04em;
+}
+
+.vs-app-shell .card-header {
+    margin: 0 !important;
+    padding: 0.9rem 1.1rem !important;
+    border-bottom: 0 !important;
+    border-radius: 12px 12px 0 0 !important;
+    background: linear-gradient(135deg, #7c3041 0%, #9b3d50 100%) !important;
+    color: #ffffff !important;
+}
+
+.vs-app-shell .card-header h3,
+.vs-app-shell .card-header h2,
+.vs-app-shell .card-header i {
+    color: #ffffff !important;
+}
+
+.vs-app-shell .main-card {
+    padding: 0 !important;
+    overflow: hidden;
+}
+
+.vs-app-shell .main-card > :not(.card-header):not(.results-header),
+.vs-app-shell .position-section,
+.vs-app-shell .submit-section {
+    margin-left: 1.1rem !important;
+    margin-right: 1.1rem !important;
+}
+
+.vs-app-shell .main-card > :last-child {
+    margin-bottom: 1.1rem !important;
+}
+
+.vs-app-shell .candidate-card:hover,
+.vs-app-shell .listing-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(15, 22, 35, 0.08), 0 14px 34px rgba(15, 22, 35, 0.1) !important;
+}
+
+@media (max-width: 900px) {
+    .meditrack-shell .module-topbar,
+    .vs-app-shell .module-topbar {
+        grid-template-columns: 1fr;
+        align-items: stretch !important;
+    }
+
+    .vs-app-shell .module-actions {
+        justify-content: flex-start !important;
+    }
+}
