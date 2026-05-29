@@ -11,6 +11,7 @@ class VoteSysCspMiddleware
     {
         $response  = $next($request);
         $portalUrl = config('app.portal_url', 'https://deoris.test');
+        $debugConnectSrc = app()->hasDebugModeEnabled() ? ' http://127.0.0.1:7481' : '';
 
         $csp = implode('; ', [
             "default-src 'self'",
@@ -19,7 +20,7 @@ class VoteSysCspMiddleware
             "style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com",
             "font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com",
             "img-src 'self' data: blob:",
-            "connect-src 'self' " . $portalUrl,
+            "connect-src 'self' " . $portalUrl . $debugConnectSrc,
             "frame-ancestors " . $portalUrl,
             "frame-src 'self'",
             "object-src 'none'",
