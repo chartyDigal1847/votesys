@@ -44,7 +44,7 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
             background: var(--page-bg);
             color: var(--text-primary);
             min-height: 100vh;
@@ -337,7 +337,7 @@
         .content-area { padding: 24px 32px 40px; flex: 1; max-width: 1200px; margin: 0 auto; width: 100%; }
         .page-header { margin-bottom: 24px; }
         .page-header h2 {
-            font-family: 'Inter', sans-serif;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
             font-size: 1.75rem;
             font-weight: 700;
             color: var(--text-primary);
@@ -586,14 +586,14 @@
         .stat-icon.burgundy { background: rgba(114, 47, 55, 0.1); color: var(--burgundy); }
         .stat-icon.green { background: rgba(45, 138, 78, 0.1); color: var(--success); }
         .stat-icon.blue { background: rgba(70, 130, 180, 0.1); color: #4682b4; }
-        .stat-value { font-family: 'Inter', sans-serif; font-size: 2rem; font-weight: 700; color: var(--text-primary); margin-bottom: 4px; }
+        .stat-value { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-size: 2rem; font-weight: 700; color: var(--text-primary); margin-bottom: 4px; }
         .stat-label { font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600; margin-bottom: 8px; }
         .stat-meta { font-size: 0.8rem; color: var(--text-secondary); display: flex; align-items: center; gap: 6px; }
         .stat-meta .positive { color: var(--success); }
 
         .main-card { background: var(--card-bg); border-radius: var(--radius-xl); padding: 32px; border: 1px solid var(--card-border); box-shadow: var(--card-shadow); margin-bottom: 24px; }
         .card-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; padding-bottom: 20px; border-bottom: 1px solid var(--border-light); }
-        .card-header h3 { font-family: 'Inter', sans-serif; font-size: 1.25rem; font-weight: 700; color: var(--text-primary); display: flex; align-items: center; gap: 10px; }
+        .card-header h3 { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-size: 1.25rem; font-weight: 700; color: var(--text-primary); display: flex; align-items: center; gap: 10px; }
         .card-header h3 i { color: var(--maroon); }
 
         .status-badge { display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; }
@@ -610,7 +610,7 @@
             border: 1.5px solid var(--border-light);
             border-radius: var(--radius-md);
             font-size: 0.95rem;
-            font-family: 'Inter', sans-serif;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
             transition: all 0.2s ease;
             background: var(--main-bg);
             color: var(--text-primary);
@@ -629,7 +629,7 @@
             border-radius: var(--radius-md);
             border-left: 3px solid var(--burgundy);
         }
-        .position-name { font-family: 'Inter', sans-serif; font-size: 1.1rem; font-weight: 700; color: var(--maroon); }
+        .position-name { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-size: 1.1rem; font-weight: 700; color: var(--maroon); }
         .position-count { font-size: 0.8rem; color: var(--text-muted); background: var(--card-bg); padding: 6px 14px; border-radius: 20px; border: 1px solid var(--border-light); font-weight: 500; }
 
         .candidates-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
@@ -689,7 +689,7 @@
             object-position: center top;
             display: block;
         }
-        .candidate-name { font-family: 'Inter', sans-serif; font-size: 1.1rem; font-weight: 700; color: var(--text-primary); margin-bottom: 6px; }
+        .candidate-name { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-size: 1.1rem; font-weight: 700; color: var(--text-primary); margin-bottom: 6px; }
         .candidate-party { display: inline-block; background: rgba(114, 47, 55, 0.08); color: var(--burgundy); padding: 4px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 600; margin-bottom: 12px; }
         .candidate-course { font-size: 0.85rem; color: var(--text-secondary); display: flex; align-items: center; gap: 6px; }
         .candidate-course i { color: var(--gold); font-size: 0.8rem; }
@@ -702,7 +702,7 @@
             padding: 16px 48px;
             font-size: 1rem;
             font-weight: 700;
-            font-family: 'Inter', sans-serif;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
             letter-spacing: 1px;
             border-radius: 50px;
             cursor: pointer;
@@ -731,14 +731,14 @@
             animation: successPulse 0.5s ease;
         }
         @keyframes successPulse { 0% { transform: scale(0); } 50% { transform: scale(1.1); } 100% { transform: scale(1); } }
-        .results-title { font-family: 'Inter', sans-serif; font-size: 1.5rem; font-weight: 700; color: var(--text-primary); margin-bottom: 6px; }
+        .results-title { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-size: 1.5rem; font-weight: 700; color: var(--text-primary); margin-bottom: 6px; }
         .results-subtitle { color: var(--text-secondary); font-size: 0.9rem; }
         .live-badge { display: inline-flex; align-items: center; gap: 8px; background: var(--success-light); color: var(--success); padding: 8px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; margin-bottom: 28px; }
         .live-dot { width: 8px; height: 8px; background: var(--success); border-radius: 50%; animation: pulse 1.5s infinite; }
 
         .result-position { margin-bottom: 32px; }
         .result-position-title {
-            font-family: 'Inter', sans-serif;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
             font-size: 1.1rem;
             color: var(--burgundy);
             margin-bottom: 20px;
@@ -1312,7 +1312,7 @@
             --mt-shadow: 0 2px 8px rgba(0, 0, 0, .08);
             background: var(--mt-bg);
             color: var(--mt-text);
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
         }
 
         .meditrack-shell .app-header {
