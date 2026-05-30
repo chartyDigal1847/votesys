@@ -93,13 +93,13 @@ return new class extends Migration
                     SET v_rank = v_rank + 1;
 
                     INSERT INTO election_results
-                        (election_id, position_id, candidate_id, vote_count, vote_percentage, rank, computed_at, created_at, updated_at)
+                        (election_id, position_id, candidate_id, vote_count, vote_percentage, `rank`, computed_at, created_at, updated_at)
                     VALUES
                         (p_election_id, v_pos_id, v_cand_id, v_cnt, v_pct, v_rank, NOW(), NOW(), NOW())
                     ON DUPLICATE KEY UPDATE
                         vote_count       = v_cnt,
                         vote_percentage  = v_pct,
-                        rank             = v_rank,
+                        `rank`           = v_rank,
                         computed_at      = NOW(),
                         updated_at       = NOW();
                 END LOOP;
@@ -117,7 +117,7 @@ return new class extends Migration
                 -- Update the live vote count view data by refreshing the
                 -- election_results row for the affected candidate/position.
                 INSERT INTO election_results
-                    (election_id, position_id, candidate_id, vote_count, vote_percentage, rank, computed_at, created_at, updated_at)
+                    (election_id, position_id, candidate_id, vote_count, vote_percentage, `rank`, computed_at, created_at, updated_at)
                 SELECT
                     NEW.election_id,
                     NEW.position_id,
