@@ -59,7 +59,7 @@
 
     <div class="card">
         @if ($candidates->isEmpty())
-            <div class="empty">No candidates yet. <a href="{{ route('candidates.create') }}" style="color:var(--burgundy); font-weight:600;">Create one</a>.</div>
+            <div class="empty">No candidates yet.</div>
         @else
             <table>
                 <thead>
